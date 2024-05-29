@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="ESTILOS/DAVICHOP.css">
+    <script src="FUNCIONES JAVA/PROGRAMA.js"></script>
+    <link rel="icon" href="ICONOS/TIKOTIKO.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DIARIA</title>
+  </head>
+  <body>
+    <div class="tabla-contenedor">
+      <table id ="customers" border="1">
+          <caption>DATOS DE PRIORIDAD</caption>
+          <tr>
+            <th>CATEGORIA</th>
+            <th>BOTON SUMAR</th>
+            <th>BOTON RESTAR</th>
+            <th>VALOR</th>
+          </tr>
+          <tr>
+            <td>NO CONTESTA</td>
+            <td><button class="my-button" onclick="sumar(0,16)">+</button></td>
+            <td><button class="my-button" onclick="restar(0,16)">-</button></td>
+            <td id="valor0">0</td>
+          </tr>
+          <tr>
+            <td>MATRICULA</td>
+            <td><button class="my-button" onclick="sumar(1,16)">+</button></td>
+            <td><button class="my-button" onclick="restar(1,16)">-</button></td>
+            <td id="valor1">0</td>
+          </tr>
+          <tr>
+            <td>BUZÓN/APAGADO</td>
+            <td><button class="my-button" onclick="sumar(2,16)">+</button></td>
+            <td><button class="my-button" onclick="restar(2,16)">-</button></td>
+            <td id="valor2">0</td>
+          </tr>
+          <tr>
+            <td>DATOS ERRADOS</td>
+            <td><button class="my-button" onclick="sumar(3,16)">+</button></td>
+            <td><button class="my-button" onclick="restar(3,16)">-</button></td>
+            <td id="valor3">0</td>
+            <tr>
+              <td>LLAMAR DESPUÉS</td>
+              <td><button class="my-button" onclick="sumar(4,16)">+</button></td>
+              <td><button class="my-button" onclick="restar(4,16)">-</button></td>
+              <td id="valor4">0</td>
+            </tr>
+            <tr>
+              <td>NO LE INTERESA</td>
+              <td><button class="my-button" onclick="sumar(5,16)">+</button></td>
+              <td><button class="my-button" onclick="restar(5,16)">-</button></td>
+              <td id="valor5">0</td>
+            </tr>
+            <tr>
+              <td>NO YA LO TOMO</td>
+              <td><button class="my-button" onclick="sumar(6,16)">+</button></td>
+              <td><button class="my-button" onclick="restar(6,16)">-</button></td>
+              <td id="valor6">0</td>
+            </tr>
+            <tr>
+              <td>CITA</td>
+              <td><button class="my-button" onclick="sumar(7,16)">+</button></td>
+              <td><button class="my-button" onclick="restar(7,16)">-</button></td>
+              <td id="valor7">0</td>
+            </tr>
+            
+          </tr>
+          <tr>
+            <td colspan="3">Total de Llamadas:</td>
+            <td id="valor16">0</td>
+        </tr>
+      </table>
+
+      <table id ="customers" border="1">
+          <caption>DATOS DE SEMANA</caption>
+          <tr>
+            <th>CATEGORIA</th>
+            <th>BOTON SUMAR</th>
+            <th>BOTON RESTAR</th>
+            <th>VALOR</th>
+          </tr>
+          <tr>
+            <td>NO CONTESTA</td>
+            <td><button class="my-button" onclick="sumar(8,17)">+</button></td>
+            <td><button class="my-button" onclick="restar(8,17)">-</button></td>
+            <td id="valor8">0</td>
+          </tr>
+          <tr>
+          <tr>
+            <td>MATRICULA</td>
+            <td><button class="my-button" onclick="sumar(9,17)">+</button></td>
+            <td><button class="my-button" onclick="restar(9,17)">-</button></td>
+            <td id="valor9">0</td>
+          </tr>
+          <tr>
+            <td>BUZÓN/APAGADO</td>
+            <td><button class="my-button" onclick="sumar(10,17)">+</button></td>
+            <td><button class="my-button" onclick="restar(10,17)">-</button></td>
+            <td id="valor10">0</td>
+          </tr>
+          <tr>
+            <td>DATOS ERRADOS</td>
+            <td><button class="my-button" onclick="sumar(11,17)">+</button></td>
+            <td><button class="my-button" onclick="restar(11,17)">-</button></td>
+            <td id="valor11">0</td>
+            <tr>
+              <td>LLAMAR DESPUÉS</td>
+              <td><button class="my-button" onclick="sumar(12,17)">+</button></td>
+              <td><button class="my-button" onclick="restar(12,17)">-</button></td>
+              <td id="valor12">0</td>
+            </tr>
+            <tr>
+              <td>NO LE INTERESA</td>
+              <td><button class="my-button" onclick="sumar(13,17)">+</button></td>
+              <td><button class="my-button" onclick="restar(13,17)">-</button></td>
+              <td id="valor13">0</td>
+            </tr>
+            <tr>
+              <td>NO YA LO TOMO</td>
+              <td><button class="my-button" onclick="sumar(14,17)">+</button></td>
+              <td><button class="my-button" onclick="restar(14,17)">-</button></td>
+              <td id="valor13">0</td>
+            </tr>
+            <tr>
+              <td>CITA</td>
+              <td><button class="my-button" onclick="sumar(15,17)">+</button></td>
+              <td><button class="my-button" onclick="restar(15,17)">-</button></td>
+              <td id="valor15">0</td>
+            </tr>
+          </tr>
+          <tr>
+            <td colspan="3">Total de Llamadas:</td>
+            <td id="valor17">0</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

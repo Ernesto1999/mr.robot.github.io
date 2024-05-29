@@ -1,0 +1,79 @@
+  .tabla-contenedor {
+        display: flex;
+    }
+  .tabla-contenedor table {
+      margin-right: 20px; /* Espacio entre las tablas */
+  }
+  body {
+  background-color: #3b3939; /* Fondo negro */
+  color: #ffffff; /* Texto blanco */
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ffffff; /* Borde blanco */
+}
+
+#customers td, #customers th {
+  border: 1px solid #ffffff; /* Borde blanco */
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) td {
+  background-color: #333333; /* Fondo para filas pares */
+}
+
+#customers tr:nth-child(odd) td {
+  background-color: #222222; /* Fondo para filas impares */
+}
+
+#customers tr:hover {
+  background-color: #444444; /* Fondo al pasar el mouse */
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+.my-button {
+  padding: 10px 20px;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.my-button:hover {
+  background-color: #e221b8;
+}
+.my-button:active {
+  background-color: #3e28bd;
+}
+  @keyframes cambio-color {
+    0% { box-shadow: 0 0 10px red; }
+    16.7% { box-shadow: 0 0 10px orange; }
+    33.3% { box-shadow: 0 0 10px yellow; }
+    50% { box-shadow: 0 0 10px green; }
+    66.7% { box-shadow: 0 0 10px blue; }
+    83.3% { box-shadow: 0 0 10px indigo; }
+    100% { box-shadow: 0 0 10px violet; }
+  }
+
+  .my-button {
+    background-color: #222222; /* Color de fondo transparente */
+    border: 2px solid transparent; /* Borde transparente */
+    color: white;
+     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%; /* Bordes redondos para hacer el botón redondo */
+    animation: cambio-color 4s infinite; /* Animación de cambio de color */
+  }
